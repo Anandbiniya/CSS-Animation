@@ -4,7 +4,7 @@
 <h2>Tech Stack</h2>
 <li>HTML</li>
 <li>CSS</li>
-<li><JS</li>
+<li>JS</li>
 
 
 <h2>Days</h2>
