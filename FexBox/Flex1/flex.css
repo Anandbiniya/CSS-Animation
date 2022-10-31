@@ -1,0 +1,48 @@
+/* Css Normalize */
+/* article,aside,details, */
+body {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 1);
+}
+.box1 {
+  background: #1abc9c;
+}
+.box2 {
+  background: #3490ba;
+}
+.box3 {
+  background: #9b85ab;
+}
+.box4 {
+  background: #ef0b44;
+}
+.box4 {
+  background: #c0d616;
+}
+.box5 {
+  background: #e8370f;
+}
+.box6 {
+  background: #d609da;
+}
+.box7 {
+  background: #192f35;
+}
+.box8 {
+  background: #0ccfdd;
+}
+.box9 {
+  background: #e3e3c7;
+}
+.box10 {
+  background: #f108a0;
+}
+.container{
+    display:flex;
+    border: 10px solid goldenrod;
+    height: 100vh;
+    flex-direction:column;
+    /* flex directiow is default behaviour of flex */
+}
