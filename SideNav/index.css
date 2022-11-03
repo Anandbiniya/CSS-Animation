@@ -1,0 +1,65 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+aside {
+  color: #fff;
+  width: 250px;
+  padding-left: 22px;
+  height: 100vh;
+  background-image: linear-gradient(30deg, #0048bd, #44a7fd);
+  border-top-right-radius: 50px;
+}
+aside a {
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  padding: 15px;
+  padding-left: 33px;
+  text-decoration: none;
+}
+aside a:hover {
+  color: #0048bd;
+
+  outline: none;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  /* The outline CSS shorthand property sets most of the outline properties in a single declaration. */
+}
+aside a i {
+  margin-right: 5px;
+}
+
+aside a:hover::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  bottom: 100%;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-bottom-right-radius: 18px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+  /* The content CSS property replaces an element with a generated value. Objects inserted using the content property are anonymous replaced elements. */
+}
+aside a:hobver::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  top: 38px;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-top-right-radius: 18px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+aside p {
+  margin: 0;
+  padding: 40px 0;
+}
