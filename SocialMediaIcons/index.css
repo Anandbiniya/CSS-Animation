@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* we have to give padding and margin 0 so it will not give the default padding and margin to entire body */
+  box-sizing: border-box;
+}
+*:focus,
+:active {
+  /* when we do focus it  will only focused only the particular element */
+  background-color: aqua;
+  outline: none !important;
+  /* the important declaration is important The !important flag alters the rules selecting declarations inside the cascade. A declaration that is not important is called normal.*/
+  /* The :active CSS pseudo-class represents an element (such as a button) that is being activated by the user. When using a mouse, "activation" typically starts when the user presses down the primary mouse button. */
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  place-items: center;
+  background: linear-gradient(315degm #ffffff, #d1e1ec);
+}
+.maindiv {
+  display: inline-flex;
+}
+.maindiv .icon {
+  position: relative;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, -0.265, 1.55);
+}
+.maindiv .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background-color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, -0.265, 1.55);
+}
