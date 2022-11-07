@@ -9,7 +9,7 @@
 *:focus,
 :active {
   /* when we do focus it  will only focused only the particular element */
-  background-color: aqua;
+
   outline: none !important;
   /* the important declaration is important The !important flag alters the rules selecting declarations inside the cascade. A declaration that is not important is called normal.*/
   /* The :active CSS pseudo-class represents an element (such as a button) that is being activated by the user. When using a mouse, "activation" typically starts when the user presses down the primary mouse button. */
@@ -61,3 +61,54 @@ body {
   pointer-events: none;
   transition: all 0.2s cubic-bezier(0.68, -0.55, -0.265, 1.55);
 }
+
+.maindiv.icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.maindiv .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.maindiv .icon:hover span,
+.maindiv .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.maindiv .facebook:hover,
+.maindiv .facebook:hover .tooltip,
+.maindiv .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+
+.maindiv .twitter:hover,
+.maindiv .twitter:hover .tooltip,
+.maindiv .twitter:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+
+.maindiv .insta:hover,
+.maindiv .insta:hover .tooltip,
+.maindiv .insta:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+.maindiv .git:hover,
+.maindiv .git:hover .tooltip,
+.maindiv .git:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+
