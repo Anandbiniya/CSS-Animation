@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Sono:wght@200&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+        background: #000;
+      }
+      #container {
+        display: flex;
+        text-align: center;
+      }
+      #container > .box {
+        width: 30%;
+        margin: 0px 10px;
+      }
+      img {
+        width: 100%;
+
+        object-fit: cover;
+      }
+      :root {
+        --color-1: #442288;
+        --color-2: #6ca2ea;
+        --color-3: #b5d33d;
+        --color-4: #fed23f;
+        --color-5: #eb7d5b;
+        --angle: 0deg;
+      }
+
+      h1 {
+        color: #fff;
+        text-align: center;
+        font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 6.5vw;
+        font-weight: 900;
+        line-height: 6vw;
+        text-transform: uppercase;
+        word-spacing: 100vw;
+        background: linear-gradient(
+          var(--angle),
+          var(--color-1) 19%,
+          transparent 19%,
+          transparent 20%,
+          var(--color-2) 20%,
+          var(--color-2) 39%,
+          transparent 39%,
+          transparent 40%,
+          var(--color-3) 40%,
+          var(--color-3) 59%,
+          transparent 59%,
+          transparent 60%,
+          var(--color-4) 60%,
+          var(--color-4) 79%,
+          transparent 79%,
+          transparent 80%,
+          var(--color-5) 80%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: 10s rotate linear infinite;
+      }
+      @keyframes rotate {
+        to {
+          --angle: 360deg;
+        }
+      }
+      @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+      }
+      p {
+        color: #fff;
+        text-align: center;
+        font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 10px;
+        font-weight: 900;
+        text-transform: uppercase;
+        background: linear-gradient(
+          var(--angle),
+          var(--color-1) 19%,
+          transparent 19%,
+          transparent 20%,
+          var(--color-2) 20%,
+          var(--color-2) 39%,
+          transparent 39%,
+          transparent 40%,
+          var(--color-3) 40%,
+          var(--color-3) 59%,
+          transparent 59%,
+          transparent 60%,
+          var(--color-4) 60%,
+          var(--color-4) 79%,
+          transparent 79%,
+          transparent 80%,
+          var(--color-5) 80%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: 10s rotate linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Chairs</h1>
+    <div id="container">
+      <div class="box">
+        <img
+          src="https://cdnext.fynd.com/image/data/Westelm/29July2021/7828717_2.jpg?width=500&height=500&mode=fill&fill=solid&fill-color=FFFFFF"
+          alt=""
+        />
+        <p>Carlo Mid-Century Chair</p>
+      </div>
+      <div class="box">
+        <img
+          src="https://cdnext.fynd.com/image/data/Westelm/6-july-2022/8027779_2.jpg?width=500&height=500&mode=fill&fill=solid&fill-color=FFFFFF"
+          alt=""
+        />
+        <p>Lucia Chair</p>
+      </div>
+      <div class="box">
+        <img
+          src="https://cdnext.fynd.com/image/data/Westelm/27072022img/8172708_1.jpg?width=780&height=780&mode=fill&fill=solid&fill-color=FFFFFF"
+          alt=""
+        />
+        <p>Wire Frame Slipper Chair</p>
+      </div>
+    </div>
+  </body>
+</html>
