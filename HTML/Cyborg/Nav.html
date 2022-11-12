@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .cssnavbar {
+        display: flex;
+        background-color: yellow;
+      }
+      .cssnavbar > div {
+        width: 30%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
+      .cssnavbar > div {
+        text-align: center;
+        justify-content: center;
+
+        color: #fff;
+      }
+      .cssnavbar > div > img {
+        width: 18%;
+        border-radius: 100px;
+        margin: 0px 10px;
+      }
+      h3 {
+        margin: 20px 10px;
+        color: grey;
+        font-size: 1.8em;
+      }
+      .form {
+        width:900px;
+        height: 20px;
+        justify-content: center;
+        align-items: center;
+        color: #555;
+        display: flex;
+        padding: 2px;
+        border: 1px solid currentColor;
+        border-radius: 10px;
+        background-color: #6d7582;
+}
+input[type="search"] {
+  border: none;
+  width:100%;
+  /* to merge with serach icon */
+  background: transparent;
+
+  /* It will not show of the color */
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 20px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+  /* The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency. */
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+}
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="cssnavbar">
+      <div>
+        <img
+          src="https://cdn4.vectorstock.com/i/1000x1000/73/03/cyborg-esport-mascot-logo-design-vector-27477303.jpg"
+          alt=""
+        />
+        <h3>Cyclo</h3>
+      </div>
+      <div> <form action="" class="form">
+        <button type="submit">Search</i></button>
+        <input type="text" placeholder="Type some thing" />
+       
+      </form></div>
+      <div>B</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+      }
+      .maindiv {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+        width: 800px;
+        height: 415px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+      }
+      .maindiv > div {
+        border: 2px solid red;
+        width: 100%;
+        height: 100px;
+      }
+      .maindiv > div:nth-child(3) {
+        display: flex;
+      }
+      .maindiv > div:nth-child(3) > div {
+        border: 2px solid yellow;
+        height: 100%;
+        width: 50%;
+      }
+      .childone > div {
+        height: 50%;
+        border: 1px solid rgb(201, 13, 44);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maindiv">
+      <div>Header</div>
+      <div>Nav</div>
+      <div>
+        <div class="childone">
+          <div>Article</div>
+          <div>title</div>
+        </div>
+        <div>Aside</div>
+      </div>
+      <div>Footer</div>
+    </div>
+  </body>
+</html>
