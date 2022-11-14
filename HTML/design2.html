@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      .maincontainer {
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        border: 2px solid red;
+      }
+      header {
+        border: 2px solid grey;
+        height: 70px;
+      }
+      nav {
+        border: 2px solid grey;
+        height: 70px;
+      }
+      .inside {
+        border: 2px solid red;
+        display: flex;
+        height: 150px;
+      }
+      .inside > div:nth-child(1) {
+        width: 30%;
+        border: 5px solid rgb(13, 233, 13);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maincontainer">
+      <header>Header</header>
+      <nav>Nav</nav>
+      <div class="inside">
+        <div>Index</div>
+        <div>Content</div>
+      </div>
+      <div>Footer</div>
+    </div>
+  </body>
+</html>
