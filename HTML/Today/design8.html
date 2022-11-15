@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 500px;
+        height: 400px;
+        display: grid;
+        border: 2px solid red;
+      }
+      .container > div:nth-child(1) {
+        grid-column: 1/12;
+        grid-row: 1/2;
+        border: 2px solid rgb(255, 0, 166);
+      }
+      .container > div:nth-child(2) {
+        grid-column: 1/12;
+        grid-row: 2/4;
+        border: 2px solid rgb(210, 185, 201);
+      }
+      .container > div:nth-child(3) {
+        display: grid;
+        grid-row: 4/6;
+        border: 2px solid pink;
+      }
+      .andala > div:nth-child(1) {
+        grid-column: 1/12;
+
+        border: 2px solid rgb(210, 185, 201);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>Anand</div>
+      <div>Maddy</div>
+      <div class="andala">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div></div>
+    </div>
+  </body>
+</html>
