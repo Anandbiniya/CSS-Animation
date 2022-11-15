@@ -6,55 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-                  .container {
-                   /* height: 500px; */
-                    display: flex;
-                    flex-direction: row;
-                    background-color: antiquewhite;
-                    /* justify-content is always on the main axis */
-                    /* justify-content:start; */
-                    /* The justify-content property is a sub-property of the Flexible Box Layout module.
+      .container {
+        /* height: 500px; */
+        display: flex;
+        flex-direction: row;
+        background-color: antiquewhite;
+        /* justify-content is always on the main axis */
+        /* justify-content:start; */
+        /* The justify-content property is a sub-property of the Flexible Box Layout module.
       */
-      /*            aalways on the cross axis */
-                    /* //align-items: end; */
+        /*            aalways on the cross axis */
+        /* //align-items: end; */
 
-                    /* when we have a flex-column the main axis is vertical and cross axis is horixzontal  */
-                /* flex-wrap: wrap;The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked. */
-
-
-                }
-                  .item {
-                    flex-basis: 100px;
-                    /*The flex-basis CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing  */
-                    height: 100px;
-                    background-color: rgb(11, 11, 223);
-                    color: #fff;
-                    margin: 10px;
-                  }
-                  .item:nth-of-type(1) {
-                  flex-grow: 1;
-
-                  }
-                 .item:nth-of-type(2) {
-
-                    flex-grow: 2;
-                  }
-                  .item:nth-of-type(3) {
-                    flex-grow: 1;
-
-                  }
-                  /* .item:nth-of-type(1) {
+        /* when we have a flex-column the main axis is vertical and cross axis is horixzontal  */
+        /* flex-wrap: wrap;The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked. */
+      }
+      .item {
+        flex-basis: 100px;
+        /*The flex-basis CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing  */
+        height: 100px;
+        background-color: rgb(11, 11, 223);
+        color: #fff;
+        margin: 10px;
+      }
+      .item:nth-of-type(1) {
+        flex-grow: 1;
+      }
+      .item:nth-of-type(2) {
+        flex-grow: 2;
+      }
+      .item:nth-of-type(3) {
+        flex-grow: 1;
+      }
+      /* .item:nth-of-type(1) {
                     align-self: start;
                     /* the own div move to the position where align-self mentioned */
 
-                  /* .item:nth-of-type(2) {
+      /* .item:nth-of-type(2) {
                     align-self: center;
                     /* the own div move to the position where align-self mentioned */
 
-                  /* .item:nth-of-type(3) {
+      /* .item:nth-of-type(3) {
                     align-self: end;
                     /* the own div move to the position where align-self mentioned */
-                  */ */ */
     </style>
   </head>
   <body>
