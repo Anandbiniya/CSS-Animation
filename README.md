@@ -14,6 +14,8 @@
 <li>Day 4:</li><a href="https://rainbow-unicorn-ce7f3a.netlify.app/">SResponsive Taskbar</a>
 <li>Day 5:</li><a href="https://statuesque-croissant-29dcaa.netlify.app/">CSS Cards</a>
 <li>Day 6:</li><a href="https://glittering-truffle-cd7621.netlify.app/">Chairs and Multicolorr</a>
+<li>Day :</li><a href="https://eloquent-meringue-f89f56.netlify.app/">Flex </a>
+<li>Day :</li><a href="https://verdant-chaja-599993.netlify.app/">Flex </a>
 
 https://statuesque-croissant-29dcaa.netlify.app/
 
