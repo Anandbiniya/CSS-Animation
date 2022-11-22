@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 600px;
+        height: 600px;
+        display: flex;
+        border: 5px solid yellow;
+        margin: auto;
+        position: relative;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+      }
+      .container > div:nth-child(1) {
+        width: 30%;
+        height: 30%;
+        border: 2px solid red;
+        border-radius: 50%;
+      }
+      .container > div:nth-child(2) {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .container > div:nth-child(2) > div {
+        width: 30%;
+        height: 100%;
+        border-radius: 50%;
+        border: 5px solid blue;
+      }
+      .container > div:nth-child(3) {
+        width: 30%;
+        height: 30%;
+        border: 5px solid rgb(0, 255, 8);
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <!-- <div></div> -->
+      <div>A</div>
+      <div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <div>C</div>
+    </div>
+  </body>
+</html>
