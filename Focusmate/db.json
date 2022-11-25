@@ -1,0 +1,34 @@
+{
+  "students": [
+    {
+      "name": "Anand",
+      "age": 23,
+      "Good": true,
+      "skills": ["HTML", "CSS"],
+      "address": {
+        "city": "HYD",
+        "s": "kan"
+      }
+    },
+    {
+      "name": "AnandAMith",
+      "age": 13,
+      "Good": true,
+      "skills": ["HTML", "JS"],
+      "address": {
+        "city": "VSKP",
+        "s": "AP"
+      }
+    },
+    {
+      "name": "AJay",
+      "age": 24,
+      "Good": false,
+      "skills": ["RS", "JS"],
+      "address": {
+        "city": "MP",
+        "s": "IP"
+      }
+    }
+  ]
+}

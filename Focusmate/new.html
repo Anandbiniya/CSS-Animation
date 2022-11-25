@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #title {
+        background: #000;
+        color: rgb(143, 134, 151);
+        margin-top: 0;
+        padding: 30px;
+        text-align: center;
+      }
+
+      h1 {
+        color: slateblue;
+      }
+      #container {
+        margin-left: 30px;
+      }
+      ul li {
+        font-size: 24px;
+        margin-bottom: 10px;
+        border: 2px solid green;
+      }
+      .childdiv {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="title">ALBUM</h1>
+      <div class="childdiv">
+        <div>
+          <ul id="list"></ul>
+          <ul id="elist"></ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      var Img = "";
+      let title = "";
+      fetch("https://jsonplaceholder.typicode.com/users")
+        .then((res) => res.json())
+        .then((i) => {
+          i.forEach((e) => {
+            Img += `<li>${e.name}</li>`;
+            title += `<li>${e.email}</li>`;
+          });
+
+          document.getElementById("list").innerHTML = Img;
+          document.getElementById("elist").innerHTML = title;
+
+          //document.getElementById("childdiv").append(s, k);
+        });
+    </script>
+  </body>
+</html>

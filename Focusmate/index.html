@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 id="title">JSON</h1>
+    <div id="box">
+      <h1>Students List</h1>
+      <ul id="list"></ul>
+      <br />
+      <h1>User Email List</h1>
+      <ul id="elist"></ul>
+    </div>
+    <script>
+      let stu_list = "";
+    
+      fetch("./db.json")
+        .then((res) => res.json())
+        .then((studentData) => {
+          studentData.students.forEach((student) => {
+            stu_list += `<li>${student.title}</li>`;
+          });
+
+          // .documentgetElementById("list").innerHTML = stu_list;
+        });
+
+      // ----------------------
+      var u_list = "";
+      fetch("https://jsonplaceholder.typicode.com/users")
+        .then((res) => res.json())
+        .then((todo) => {
+          todo.forEach((e) => {
+            u_list += `<li>${e.name}</li>`;
+          });
+          document.getElementById("elist").innerHTML = u_list;
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+
+
+
+#title {
+    background: #000;
+  color: rgb(143, 134, 151);
+  margin-top: 0;
+  padding: 30px;
+  text-align: center;
+}
+
+h1{
+    color: slateblue;
+}
+#box{
+    margin-left:30px;
+}ul li{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
