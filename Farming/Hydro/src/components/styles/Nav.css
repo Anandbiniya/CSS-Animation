@@ -1,0 +1,36 @@
+.nav {
+  display: flex;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+.nav > div:nth-child(1) {
+  width: 50%;
+
+  justify-content: space-around;
+  text-align: start;
+  padding: 0px 10px;
+  display: flex;
+  word-spacing: normal;
+  flex-direction: column-reverse;
+}
+.nav > div:nth-child(1) > h3 {
+  color: green;
+}
+
+.nav > div:nth-child(1) > img {
+  width: 10%;
+  object-fit: cover;
+}
+.nav > div:nth-child(2) {
+  width: 50%;
+
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0px;
+}
+.nav > div:nth-child(2) > div > img {
+  width: 10%;
+}
+.nav > div:nth-child(2) > div > h3 {
+  top: 50px;
+}

@@ -10,7 +10,10 @@
     <div class="container">
       <h1 id="main-Heading">Fav</h1>
       <ul>
-        <li class="list-items">A</li>
+        <li class="list-items">
+          <span>Neo</span>
+          A
+        </li>
         <li class="list-items">B</li>
         <li class="list-items">C</li>
         <li class="list-items">D</li>
@@ -19,7 +22,26 @@
   </body>
 </html>
 <script>
-  // DOM Manipulation
-  const title = document.querySelector("#main-Heading");
-  title.style.color = "red";
+  //creating Element
+  const ul = document.querySelector("ul");
+  const li = document.createElement("li");
+
+  // adding elements
+  ul.append(li);
+  console.log(ul);
+
+  // modifying text
+  const firstlistItem = document.querySelector(".list-items");
+  console.log(firstlistItem.innerText);
+
+  console.log(firstlistItem.innerHTML);
+  console.log(firstlistItem.textContent);
+  // diiference between InneraHTML,innerText,text content
+  li.innerText = "ABC";
+
+  // modifying attribute
+  li.setAttribute("id", "mainhead");
+  // remove attribute
+  li.removeAttribute("id");
+  li.classList("")
 </script>

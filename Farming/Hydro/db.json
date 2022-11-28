@@ -1,0 +1,170 @@
+{
+  "Tools": [
+    {
+      "name": "Airpumps",
+      "price": "$2.67",
+      "Img": "https://images-cdn.ubuy.co.in/3OHHOL4-ubuy-online-shopping.jpg",
+      "description": "An air pump is a pump for pushing air. Examples include a bicycle pump, pumps that are used to aerate an aquarium or a pond via an airstone; a gas compressor used to power a pneumatic tool, air horn or pipe organ; a bellows used to encourage a fire; a vacuum cleaner and a vacuum pump"
+    },
+    {
+      "name": "Grow Light",
+      "price": "$7.63",
+      "Img": "https://m.media-amazon.com/images/I/61pUrl7WK-L._SX466_.jpg",
+      "description": "A grow light is an electric light to help plants grow. Grow lights either attempt to provide a light spectrum similar to that of the sun, or to provide a spectrum that is more tailored to the needs of the plants being cultivated"
+    },
+    {
+      "name": "Hydraulic control",
+      "price": "$6.08",
+      "Img": "https://3.imimg.com/data3/HR/WC/GLADMIN-10822/hydraulic-control-valves-500x500.jpg",
+      "description": "Hydraulic control of the 7G-Tronic is distributed in two die cast housings, separated by a steel plate with connecting passages and bleeds. An electric set with TCU and solenoids are mounted on the upper housing."
+    },
+    {
+      "name": "Water Pumps",
+      "price": "$4.96",
+      "Img": "https://cdn.moglix.com/p/NnCZVMKd1aKBS.jpg",
+      "description": " A water pump is an electromechanical machine used to increase the pressure of water to move it from one point to another. Modern water pumps are used throughout the world to supply water for municipal, industrial, agricultural, and residential uses."
+    },
+    {
+      "name": "Water Chillers",
+      "price": "$6.44",
+      "Img": "https://5.imimg.com/data5/MH/YG/MY-3705200/water-chillers-500x500.jpg",
+      "description": " A water chiller is a device used to lower the temperature of water. Most chillers use refrigerant in a closed loop system to facilitate heat exchange from water where the refrigerant is then pumped to a location where the waste heat is transferred to the atmosphere."
+    },
+    {
+      "name": "Dutch Buckets",
+      "price": "$1.97",
+      "Img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr_4awRbC8LYgqRWnIyi2fFxlzrS50ajH1QE-NYA0Ga2wg6-h15dPEuHxNbjGpsjekhXQ&usqp=CAU",
+      "description": " he hydroponic cultivation systems with Dutch Buckets , have been used for many years for the production of vegetables both in large commercial greenhouses and for domestic use.A hydroponic system with Dutch vases lends itself particularly well to customizations and can be adapted to any type of environment."
+    },
+    {
+      "name": "TDS Meter",
+      "price": "$7.58",
+      "Img": "https://5.imimg.com/data5/SELLER/Default/2020/8/GZ/LY/QH/4281532/eutech-tds-meter-500x500.jpg",
+      "description": "A TDS meter is a digital tool that measures the levels of salt, nutrients, and other concentrates in the water. These measurements are critical to understanding how much water, nutrients, and oxygen your plants are currently able to absorb. It also lets you know when to feed your plants."
+    },
+    {
+      "name": "INtake Fan",
+      "price": "$9.43",
+      "Img": "https://m.media-amazon.com/images/I/616SfTeq7tL._SL1200_.jpg",
+      "description": "An indoor air intake fan is a device used to bring fresh air into your grow room from outside or from a different room in your house. It's done to cool down the air in the room and replenish the amount of oxygen and carbon dioxide in the air."
+    },
+    {
+      "name": "Light",
+      "price": "$8.21",
+      "Img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMimE4RDybjgJXCbE1axxlzaFZ7jHzrm6ZdpMdq6CTKQqM6wVEHrfmgRmxOme9J9PCo2E&usqp=CAU",
+      "description": "An indoor air intake fan is a device used to bring fresh air into your grow room from outside or from a different room in your house. It's done to cool down the air in the room and replenish the amount of oxygen and carbon dioxide in the air."
+    },
+    {
+      "name": "HYdrogrow",
+      "price": "$3.00",
+      "Img": "https://5.imimg.com/data5/WR/QM/QU/SELLER-25464873/hydrogrow-nutrient-a-250x250.jpg",
+      "description": "Hydroponics is a method of growing plants without soil. You can grow hydroponically all year long. Hydroponics uses less water than traditional soil-based systems. Hydroponic growing allows for faster growth and higher yields than traditional soil-based growing systems."
+    },
+    {
+      "name": "Dutch Buckets",
+      "price": "$1.97",
+      "Img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr_4awRbC8LYgqRWnIyi2fFxlzrS50ajH1QE-NYA0Ga2wg6-h15dPEuHxNbjGpsjekhXQ&usqp=CAU",
+      "description": " he hydroponic cultivation systems with Dutch Buckets , have been used for many years for the production of vegetables both in large commercial greenhouses and for domestic use.A hydroponic system with Dutch vases lends itself particularly well to customizations and can be adapted to any type of environment."
+    },
+    {
+      "name": "TDS Meter",
+      "price": "$7.58",
+      "Img": "https://5.imimg.com/data5/SELLER/Default/2020/8/GZ/LY/QH/4281532/eutech-tds-meter-500x500.jpg",
+      "description": "A TDS meter is a digital tool that measures the levels of salt, nutrients, and other concentrates in the water. These measurements are critical to understanding how much water, nutrients, and oxygen your plants are currently able to absorb. It also lets you know when to feed your plants."
+    },
+    {
+      "name": "Water Chillers",
+      "price": "$7.44",
+      "Img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMLjKuMoWVOr5Ryj7NJSQ62Zyuhbr0c5L7NgamzvFBtcq31OUvvEQg9ktAsln-RiAUa4g&usqp=CAU",
+      "description": " A water chiller is a device used to lower the temperature of water. Most chillers use refrigerant in a closed loop system to facilitate heat exchange from water where the refrigerant is then pumped to a location where the waste heat is transferred to the atmosphere."
+    }
+  ],
+
+  "Products": [
+    {
+      "name": "hydroponic-nutrients",
+      "price": "$3.67",
+      "Img": "https://i0.wp.com/www.nosoilsolutions.com/wp-content/uploads/2014/08/photo1-e1411610346714.jpg?fit=650%2C488&ssl=1",
+      "description": "An air pump is a pump for pushing air. Examples include a bicycle pump, pumps that are used to aerate an aquarium or a pond via an airstone; a gas compressor used to power a pneumatic tool, air horn or pipe organ; a bellows used to encourage a fire; a vacuum cleaner and a vacuum pump"
+    },
+    {
+      "name": "Hydroponic Salad Mix",
+      "price": "$1.21",
+      "Img": "https://cdn.shopify.com/s/files/1/0559/0286/3559/products/TWN00780-1copy-min.jpg?v=1643273955",
+      "description": "Hydroponic Salad Mix. It is a Keto diet-friendly packed in a hygienic hydroponics facility with no touch of bare hands. These are available online are ."
+    },
+    {
+      "name": "Fruit Mix",
+      "price": "$3.21",
+      "Img": "https://mleubin1dekg.i.optimole.com/cb:aExq~3f497/w:auto/h:auto/q:mauto/id:1288fd1be298c0798a3e920509aa482f/https://thesaladguy.cool/44.png",
+      "description": "Lettuce – Romaine, Butterhead, Lollo Rosso, etc. Spinach/KaleCherry Tomatoes n  Seasonal Fruits    Candy Tomatoes"
+    },
+    {
+      "name": "Baby Butter Lettuce & Rocket Salad Bag 90g",
+      "price": "$2",
+      "Img": "https://www.checkers.co.za/medias/10552588EAv2-checkers515Wx515H.webp?context=bWFzdGVyfGltYWdlc3w0MjUxNnxpbWFnZS93ZWJwfGltYWdlcy9oMWIvaDkxLzkwMTE2OTA4NjQ2NzAud2VicHw4OTAyNTVkYWMyOTRjOWE0ZGExYzZmYTg3NmJmMTdmMmIxODZmZjY0YmI1NjI1MjgzZDAzYmYxZmI4OWYzYjQy",
+      "description": "Fresh fruit and vegetables sourced when needed to ensure a wider variety and continuity of traditionally seasonal fresh produce for you to enjoy."
+    },
+    {
+      "name": "Grow C1 Coco Series Hydroponic Nutrients For Leafy And Salad 2000lit",
+      "price": "$2.5",
+      "Img": "https://images.jdmagicbox.com/quickquotes/images_main/grow-c1-coco-series-hydroponic-nutrients-for-leafy-and-salad-2000lit-378531259-3lunc.webp",
+      "description": "Fresh fruit and vegetables sourced when needed to ensure a wider variety and continuity of traditionally seasonal fresh produce for you to enjoy."
+    },
+
+    {
+      "name": "Grow C1 Coco Series Hydroponic Nutrients For Leafy And Salad 2000lit",
+      "price": "$2.5",
+      "Img": "https://images.jdmagicbox.com/quickquotes/images_main/grow-c1-coco-series-hydroponic-nutrients-for-leafy-and-salad-2000lit-378531259-3lunc.webp",
+      "description": "Fresh fruit and vegetables sourced when needed to ensure a wider variety and continuity of traditionally seasonal fresh produce for you to enjoy."
+    },
+    {
+      "name": "hydroponic-nutrients",
+      "price": "$3.67",
+      "Img": "https://i0.wp.com/www.nosoilsolutions.com/wp-content/uploads/2014/08/photo1-e1411610346714.jpg?fit=650%2C488&ssl=1",
+      "description": "An air pump is a pump for pushing air. Examples include a bicycle pump, pumps that are used to aerate an aquarium or a pond via an airstone; a gas compressor used to power a pneumatic tool, air horn or pipe organ; a bellows used to encourage a fire; a vacuum cleaner and a vacuum pump"
+    },
+    {
+      "name": "Hydroponic Salad Mix",
+      "price": "$1.21",
+      "Img": "https://cdn.shopify.com/s/files/1/0559/0286/3559/products/TWN00780-1copy-min.jpg?v=1643273955",
+      "description": "Hydroponic Salad Mix. It is a Keto diet-friendly packed in a hygienic hydroponics facility with no touch of bare hands. These are available online are ."
+    },
+    {
+      "name": "Fruit Mix",
+      "price": "$3.21",
+      "Img": "https://mleubin1dekg.i.optimole.com/cb:aExq~3f497/w:auto/h:auto/q:mauto/id:1288fd1be298c0798a3e920509aa482f/https://thesaladguy.cool/44.png",
+      "description": "Lettuce – Romaine, Butterhead, Lollo Rosso, etc. Spinach/KaleCherry Tomatoes n  Seasonal Fruits    Candy Tomatoes"
+    },
+    {
+      "name": "Fruit Mix",
+      "price": "$3.11",
+      "Img": "https://sierranaturalscience.com/wp-content/uploads/2020/05/604A-Pouch-Front.jpg",
+      "description": "Lettuce – Romaine, Butterhead, Lollo Rosso, etc. Spinach/KaleCherry Tomatoes n  Seasonal Fruits    Candy Tomatoes"
+    },
+    {
+      "name": "Fveg Mix",
+      "price": "$3.11",
+      "Img": "https://www.goodfruitandvegetables.com.au/images/transform/v1/crop/frm/F96xjWybVc3FcQiiSwA3u6/1721b469-c3f4-4f3d-812f-df16c31c0ce5.jpg/r0_530_7693_4479_w1200_h678_fmax.jpg",
+      "description": "Lettuce – Romaine, Butterhead, Lollo Rosso, etc. Spinach/KaleCherry Tomatoes n  Seasonal Fruits    Candy Tomatoes"
+    },
+    {
+      "name": "Tomato",
+      "price": "$3.11",
+      "Img": "https://www.grandeurafrica.com/www.grandeurafrica.com/wp-content/uploads/2018/02/tomatoes.jpg",
+      "description": "Lettuce – Romaine, Butterhead, Lollo Rosso, etc. Spinach/KaleCherry Tomatoes n  Seasonal Fruits    Candy Tomatoes"
+    },
+    {
+      "name": "Capscicum",
+      "price": "$3.11",
+      "Img": "https://www.grandeurafrica.com/www.grandeurafrica.com/wp-content/uploads/2018/02/jmrc.jpg",
+      "description": "Lettuce – Romaine, Butterhead, Lollo Rosso, etc. Spinach/KaleCherry Tomatoes n  Seasonal Fruits    Candy Tomatoes"
+    },
+    {
+      "name": "Starawberries",
+      "price": "$8.11",
+      "Img": "https://www.grandeurafrica.com/www.grandeurafrica.com/wp-content/uploads/2018/02/sugarinstrawberries.jpg",
+      "description": "Lettuce – Romaine, Butterhead, Lollo Rosso, etc. Spinach/KaleCherry Tomatoes n  Seasonal Fruits    Candy Tomatoes"
+    }
+  ]
+}
