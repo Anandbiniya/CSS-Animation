@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INterview</title>
+  </head>
+  <body>
+    <script>
+      // what is scope?
+      // a scope is that certain region of programme where define variable exist and recognised and beyond that it cannot recognised
+      var m = 5; //it is a gloabl scope
+      let x = 2; //Block scope
+      //   variable shadowing
+
+      function test() {
+        let a = "hello";
+        if (true) {
+          let a = "hi";
+          console.log(a); //here it will print hiit will shadow above a but it will print inside the block scope only
+        }
+        console.log(a); //here it will print hello
+      }
+      //Illegal shadowing
+      //we can showding var with let we cannoy shadow let with var it will show the error already has been declared
+      let a = 10;
+
+      {
+        var a = 20;
+      }
+      //the above code will show error
+      //Declaration&&
+      var k;
+      var k;//no error
+      let m;
+      let m;//error already has been declared
+      const p;//will give error
+        //   with var we can re clarate how many times we need with let we cannot reclarate
+//Inilization
+
+var i=0
+i=12
+ let l =23
+ l=0
+ const h=0
+ h=21 //will give erro
+
+
+
+
+
+
+
+
+
+      // what is function declarations
+      //   function name(num) {
+      //     return num * num;
+      //   }
+
+      //   what is function expression?
+
+      // when you store a function inside of a variable it is called function expression
+      const square = function (num) {
+        return num * num;
+      };
+
+      //   the below code called annonymus function which can assign to a variable or can be pass as a call back we create anonymous functions in JavaScript, where we want to use functions as values.
+      //   function(num){
+      //     return num*num
+      //   }
+
+      //   first class functions
+      // First-class functions when functions in that language are treated like any other variable. For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable
+
+      //   function displaysquare(fn) {
+      //     console.log("hello   " + fn(2));
+      //   }
+      //   displaysquare(name)
+
+      //here the value will be hello 4 the function got invokled here
+
+      // what is IIFE
+      // Immediedly invoke function expression
+      (function sum(x) {
+        return (function (y) {
+          console.log(x); //it will give one why because first it will check the inner function if it is not there it will check the outer function uf x is present there it will take the x value
+          //   ?what happen if the x is not present there also
+        })(2);
+      })(1);
+
+      //   function scope
+      // a function defined in the global scope can access all variables defined in the global scope. A function defined inside another function can also access all variables defined in its parent function, and any other variables to which the parent function has access.
+      // The following variables are defined in the global scope
+      const num1 = 20;
+      const num2 = 3;
+      const name = "Chamakh";
+
+      // This function is defined in the global scope
+      function multiply() {
+        return num1 * num2;
+      }
+
+      multiply(); // Returns 60
+
+      // A nested function example
+      function getScore() {
+        const num1 = 2;
+        const num2 = 3;
+
+        function add() {
+          return `${name} scored ${num1 + num2}`;
+        }
+
+        return add();
+      }
+
+      getScore(); // Returns "Chamakh scored 5"
+
+      //   Interview related to function scope
+      for (let i = 0; i < 5; i++) {
+        setTimeout(function () {
+          console.log(i);
+        }, i * 1000);
+      }
+    </script>
+  </body>
+</html>
