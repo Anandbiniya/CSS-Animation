@@ -8,122 +8,211 @@
   </head>
   <body>
     <script>
-      // what is scope?
-      // a scope is that certain region of programme where define variable exist and recognised and beyond that it cannot recognised
-      var m = 5; //it is a gloabl scope
-      let x = 2; //Block scope
-      //   variable shadowing
+                              // what is scope?
+                              // a scope is that certain region of programme where define variable exist and recognised and beyond that it cannot recognised
+                              var m = 5; //it is a gloabl scope
+                              let x = 2; //Block scope
+                              //   variable shadowing
 
-      function test() {
-        let a = "hello";
-        if (true) {
-          let a = "hi";
-          console.log(a); //here it will print hiit will shadow above a but it will print inside the block scope only
-        }
-        console.log(a); //here it will print hello
-      }
-      //Illegal shadowing
-      //we can showding var with let we cannoy shadow let with var it will show the error already has been declared
-      let a = 10;
+                              function test() {
+                                let a = "hello";
+                                if (true) {
+                                  let a = "hi";
+                                  console.log(a); //here it will print hiit will shadow above a but it will print inside the block scope only
+                                }
+                                console.log(a); //here it will print hello
+                              }
+                              //Illegal shadowing
+                              //we can showding var with let we cannoy shadow let with var it will show the error already has been declared
+                              let a = 10;
 
-      {
-        var a = 20;
-      }
-      //the above code will show error
-      //Declaration&&
-      var k;
-      var k;//no error
-      let m;
-      let m;//error already has been declared
-      const p;//will give error
-        //   with var we can re clarate how many times we need with let we cannot reclarate
-//Inilization
+                              {
+                                var a = 20;
+                              }
+                              //the above code will show error
+                              //Declaration&&
+                              var k;
+                              var k;//no error
+                              let m;
+                              let m;//error already has been declared
+                              const p;//will give error
+                                //   with var we can re clarate how many times we need with let we cannot reclarate
+                        //Inilization
 
-var i=0
-i=12
- let l =23
- l=0
- const h=0
- h=21 //will give erro
-
-
+                        var i=0
+                        i=12
+                         let l =23
+                         l=0
+                         const h=0
+                         h=21 //will give erro
 
 
+                        //JS exextion context
+                        //when we try to execute Js code there are two phases creation phase,exection phase
+                        //In creation phase 3 things happend:first it creates a global or window object and then second oen set up a memory heap for storing variable and function reference and the third stpe is initlize the variable declartion as udefined
+                  //   exection phase
+                  //assign the value of variable
+                     //Hoisting
+                     console.log(count)//this will show undefined
+                     var count=1;
+                     console.log(count)//this will show error
+                     let  count=1;
+                  //    temporial dead zone is the time between the declaration and initlization of let and const variable
 
 
 
 
 
-      // what is function declarations
-      //   function name(num) {
-      //     return num * num;
-      //   }
 
-      //   what is function expression?
 
-      // when you store a function inside of a variable it is called function expression
-      const square = function (num) {
-        return num * num;
-      };
 
-      //   the below code called annonymus function which can assign to a variable or can be pass as a call back we create anonymous functions in JavaScript, where we want to use functions as values.
-      //   function(num){
-      //     return num*num
-      //   }
 
-      //   first class functions
-      // First-class functions when functions in that language are treated like any other variable. For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable
 
-      //   function displaysquare(fn) {
-      //     console.log("hello   " + fn(2));
-      //   }
-      //   displaysquare(name)
 
-      //here the value will be hello 4 the function got invokled here
 
-      // what is IIFE
-      // Immediedly invoke function expression
-      (function sum(x) {
-        return (function (y) {
-          console.log(x); //it will give one why because first it will check the inner function if it is not there it will check the outer function uf x is present there it will take the x value
-          //   ?what happen if the x is not present there also
-        })(2);
-      })(1);
+                              // what is function declarations
+                              //   function name(num) {
+                              //     return num * num;
+                              //   }
 
-      //   function scope
-      // a function defined in the global scope can access all variables defined in the global scope. A function defined inside another function can also access all variables defined in its parent function, and any other variables to which the parent function has access.
-      // The following variables are defined in the global scope
-      const num1 = 20;
-      const num2 = 3;
-      const name = "Chamakh";
+                              //   what is function expression?
 
-      // This function is defined in the global scope
-      function multiply() {
-        return num1 * num2;
-      }
+                              // when you store a function inside of a variable it is called function expression
+                              const square = function (num) {
+                                return num * num;
+                              };
 
-      multiply(); // Returns 60
+                              //   the below code called annonymus function which can assign to a variable or can be pass as a call back we create anonymous functions in JavaScript, where we want to use functions as values.
+                              //   function(num){
+                              //     return num*num
+                              //   }
 
-      // A nested function example
-      function getScore() {
-        const num1 = 2;
-        const num2 = 3;
+                              //   first class functions
+                              // First-class functions when functions in that language are treated like any other variable. For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable
 
-        function add() {
-          return `${name} scored ${num1 + num2}`;
-        }
+                              //   function displaysquare(fn) {
+                              //     console.log("hello   " + fn(2));
+                              //   }
+                              //   displaysquare(name)
 
-        return add();
-      }
+                              //here the value will be hello 4 the function got invokled here
 
-      getScore(); // Returns "Chamakh scored 5"
+                              // what is IIFE
+                              // Immediedly invoke function expression
+                              (function sum(x) {
+                                return (function (y) {
+                                  console.log(x); //it will give one why because first it will check the inner function if it is not there it will check the outer function uf x is present there it will take the x value
+                                  //   ?what happen if the x is not present there also
+                                })(2);
+                              })(1);
 
-      //   Interview related to function scope
-      for (let i = 0; i < 5; i++) {
-        setTimeout(function () {
-          console.log(i);
-        }, i * 1000);
-      }
+                              //   function scope
+                              // a function defined in the global scope can access all variables defined in the global scope. A function defined inside another function can also access all variables defined in its parent function, and any other variables to which the parent function has access.
+                              // The following variables are defined in the global scope
+                              const num1 = 20;
+                              const num2 = 3;
+                              const name = "Chamakh";
+
+                              // This function is defined in the global scope
+                              function multiply() {
+                                return num1 * num2;
+                              }
+
+                              multiply(); // Returns 60
+
+                              // A nested function example
+                              function getScore() {
+                                const num1 = 2;
+                                const num2 = 3;
+
+                                function add() {
+                                  return `${name} scored ${num1 + num2}`;
+                                }
+
+                                return add();
+                              }
+
+                              getScore(); // Returns "Chamakh scored 5"
+
+                              //   Interview related to function scope
+                            //   for (let i = 0; i < 5; i++) {
+                            //     setTimeout(function () {
+                            //       console.log(i);
+                            //     }, i * 1000);
+                            //   } it has some doubt
+
+        //scope
+                            function functionName(){
+                                console.log("Anai")
+                            }
+                            functionName();
+              var w=21;
+              function fun(s){//Params
+                console.log(w);//it will show as undefined why because in hoisting   2 steps proceess so first it is inilize the complete code so it is initilize the global scope then it will come to the local scope and inilized the local scope as well in this scope x is present and not inilize any thing
+                w=43
+              }
+              fun(2)//Arguments
+              //params and arguments
+              //Spread operator Vs Rest operators
+
+         function spread(...nums){
+            console.log(n1*n2);
+         }
+         let arr=[5,6]
+         spread(...arr)
+      //    Spread operator means a  group value  values it make into individual  values
+        //  The JavaScript spread operator ( ... ) allows us to quickly copy all or part of an existing array or object into another array or object.
+           function Rest(...nums){
+            console.log(nums[0]*nums[1])
+
+          //   ?\Rest operator means a  individual  values it make into group value
+           }
+           Rest(...arr)
+          //  Interview question
+          const fn=(a,x,y,...numbers)=>{
+              console.log(x,y,numbers)
+          }
+          fn(1,2,3,4,5,6,7)//the out put will be 2,3,and the last remaining everything will be in one array like[4,5,6,7]
+
+
+
+        //   Call back function
+        // a function passed into another function as an arguments called cal back function.which is then invoked inside the outer function to complete some kind of routine or action.
+        function greeting(name) {
+  alert(`Hello, ${name}`);
+}
+
+function processUserInput(callback) {
+  const name = prompt("Please enter your name.");
+  callback(name);
+}
+
+processUserInput(greeting);
+
+
+//call back interview
+document.addEventListener("click",()=>{
+
+})
+
+// Arrow function
+// Arrow function was introduced in Es6 JS.They are similar to normal function in some where thew work differently
+// Diiference between arrow function and normal function
+// 1.Syntax
+// 2.Inplict of return key word in arow if we not using {} we dont need to use the word return
+//3-Arguments key words
+function cb(){
+    console.log(arguments)
+}
+cb(1,2,3)
+const cba=()=>{
+  console.log(arguments)//we cannot have a aruments inside the arrow function
+
+}
+cba(2,3,4)
+
+// 4.this key word
+
     </script>
   </body>
 </html>
