@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    OBjects
+    <script>
+      // what is objects in Js
+      // An Object is a collection of properties,and a properties is an association between a name and a value.
+      //objects are created by using curly brackets
+      const user = {
+        name: "amit",
+        age: 23,
+        "like this video": true,
+      };
+      //access the property
+      console.log(user.name);
+      //modified the property
+      user.name = "ayush";
+      //Delete the property
+      delete user.age;
+
+      //Interview question
+      const fun = (function (a) {
+        delete a;
+        //It wont delete a because a is local variable and we use delete key only in objects
+        return a;
+      })(5);
+      console.log(fun);
+
+      //Add dynamic key value pairs to an  object
+      const pro1 = "first";
+      const pro2 = "second";
+      const data = {
+        [pro1]: pro2,
+      };
+      console.log(data); //the out put will be in the key first and int value second
+
+      //Iteration in object
+      for (key in user) {
+        //console.log(user[i]);
+      }
+
+      //Js Interview question
+      const obj1 = {
+        a: "one",
+        b: "two",
+        a: "three",
+      };
+      console.log(obj1); //the out put will be a= three and b=two why because there are two keys with same name the value which added latest will be considered
+      //2:create a function multiple By two (obj) that multiplies all numeric property values of nums by 2.
+      let nums = {
+        a: 19,
+        b: 13,
+        c: "hello",
+      };
+      multiplyByTwo(nums);
+
+      function multiplyByTwo(obj) {
+        for (key in obj) {
+          if (typeof obj[key] === "number") {
+            obj[key] *= 2;
+          }
+        }
+      }
+      console.log(nums);
+      //3rd and Important out put of the following code
+      const a = {};
+      const b = { key: "b" };
+      const c = { key: "c" };
+      a[b] = 123;
+      a[c] = 456;
+      console.log(a[b]); //ans is 456 because when we assign b to a it wont assign key it will assign object object
+      a["object object"] = 123;
+      console.log(a);
+      // What is JSOn .stringify and JSON.[parse]
+
+      const users = {
+        name: "ami",
+        age: 23,
+      };
+      // convert inro string
+      console.log(JSON.stringify(users));
+      //the common used for json .stringify and parse we can store the values in the local storage
+
+      //spreadoperator
+      console.log([..."anand"]);
+      const p1 = { name: "ri", age: 12 };
+      const admin = { admin: true, ...p1 };
+      //the out put will be admin true,name lidiya age 21
+
+      //Interview question related to JSON.stringfy
+      const settings = {
+        username: "anand",
+        level: 1,
+        health: 2,
+      };
+      const Datasetting = JSON.stringify(settings, ["level", "health"]);
+      console.log(Datasetting); //the out put will be it will only string fy those which is given there in this case level and health going to be stringify
+      //what is the output
+      const shape = {
+        radius: 10,
+        diameter: function () {
+          return this.radius * 2;
+        },
+        perimeter: () => 2 * Math.PI * this.radius,
+      };
+
+      console.log(shape.diameter()); //it will give value of 20
+      console.log(shape.perimeter()); //it will give value of NAN
+      //Reason:in esc function when we using this keyword iit means itr is gonna reference window object ;
+      //in normal function it gonna refernce the radius
+
+      // Destructuring in Objects?
+      // The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+      const ameris = {
+        name: "anand",
+        boy: true,
+        age: 24,
+      };
+      //const { name, age } = ameris; //this is called destructing
+
+      //want to access two only
+      //const {name,,age}=ameris////it will give wrror
+      //if we want to give access two take those two object only
+
+      //want to allias the name
+      // const { name: n, age: abi } = ameris;
+      //  Destructring in nested ways
+      let washes = {
+        model: "whirl",
+        exp: 2,
+        fullwork: {
+          first: "anand",
+          last: "ect",
+        },
+      };
+      const {
+        fullwork: { first },
+      } = washes;
+      console.log(first); //the out fut is anand
+
+      //out put of the question
+      function getItems(fruitList, favouriteFruit, ...args) {
+        return [...fruitList, ...args, favouriteFruit];
+      }
+      console.log(getItems(["banana", "apple"], "pear", "orange"));
+      //object referencing
+      let k = { greeting: "hey" };
+      let d;
+      d = k;
+      k.greeting = "hello";
+      console.log(d.greeting); //the out put will  be hello
+      //when we try to assign one object to another we are not copying all of the properties of one object to the other variable what we do is we just simply provide the refernce
+      //what is the output
+      let personpeople = { name: "joy" };
+      const members = [personpeople];
+      personpeople = null;
+      console.log(members);
+
+      //Shalow copy and Deep copy
+      // A deep copy means that all of the values of the new variable are copied and disconnected from the original variable. A shallow copy means that certain (sub-)values are still connected to the original variable.
+      //Deepcopy
+      let ways = {
+        name: "amnand",
+        age: 21,
+      };//three ways
+      //1.const objClone = Object.assign({},ways}
+      //2.const objClone ={...ways}
+      const objClone=JSON.parse(JSON.stringify(ways))
+      objClone.name = "amith";
+
+      console.log(ways, objClone); //in deep copy the the accutal value wont get effected
+    </script>
+  </body>
+</html>
