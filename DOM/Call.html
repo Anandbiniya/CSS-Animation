@@ -109,5 +109,24 @@
     const numbers = [5, 6, 2, 3, 7];
 
     console.log(Math.max.apply(null, numbers));
+
+    //Bond function
+    function f() {
+      console.log(this); //this will be pointimg to the window object
+    }
+
+    let user = {
+      g: f.bind(null),
+    };
+    user.g(); //
+
+    //Bind chaining
+
+    function h() {
+      console.log(this.name);
+    }
+    h = h.bind({ name: "JOHN" }).bind({ name: "joy" });
+
+    h(); //will print name:john
   </script>
 </html>
