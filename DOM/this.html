@@ -74,6 +74,7 @@
           nestedgig();
         },
       };
+      //you dont
 
       arrow.gug(); //still has doubt related to this
       //this in class
@@ -82,10 +83,14 @@
           this.name = n;
           this.age = a;
         }
+        getName() {
+          console.log(this.name);
+        }
       }
 
       const new_user = new users("piyush", "amith"); //A constructor is a special function that creates and initializes an object instance of a class.
       new_user.gender = "male";
+      new_user.getName();
       console.log(new_user); //In constructor function we can create an object as wekll as modified the objects
 
       function constructoruser() {
@@ -99,18 +104,61 @@
       console.log(user2);
       // Properties and methods can be added to a constructor using a prototype:
       //Constructor
-function ProUser() {
-    this.name = 'Bob';
-}
+      function ProUser() {
+        this.name = "Bob";
+      }
 
-let ProUser1 = new ProUser();
-let ProUser2 = new ProUser();
+      let ProUser1 = new ProUser();
+      let ProUser2 = new ProUser();
 
-//Adding property to constructor using prototype
-ProUser.prototype.age = 25;
+      //Adding property to constructor using prototype
+      ProUser.prototype.age = 25;
 
-console.log(ProUser1.age); // 25
-console.log(ProUser2.age); // 25
+      console.log(ProUser1.age); // 25
+      console.log(ProUser2.age); // 25
+
+      //OutputBasedquestions
+      const int = {
+        firstName: "abhi lol",
+        getNames() {
+          const firstName = "abhi";
+          return this.firstName;
+        },
+      };
+      console.log(int.getNames()); //this will print abhilol because this will be pointing the int object
+
+      //what is the result of accesing its ref and why
+      function MakeUser() {
+        return {
+          name: "john",
+          ref: this,
+        };
+      }
+      let makeusernew = MakeUser();
+      console.log(makeusernew); //how will we fix the problems so the reference names should get john in the out put
+
+      //    function MakeUser() {
+      //   return {
+      //     name: "john",
+      //    ref(){
+      //return this
+
+      // }
+      //   };
+      // }
+      //and call the function
+      // let makeusernew = MakeUser();
+
+      //another output based question
+      const loguser = {
+        name: "aman agarwal",
+        logMessage() {
+          console.log(this.name);
+        },
+      };
+
+      setTimeout(loguser.logMessage, 1000);
+      //workout
     </script>
   </body>
 </html>

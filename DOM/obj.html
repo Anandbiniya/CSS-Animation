@@ -24,6 +24,8 @@
       //Delete the property
       delete user.age;
 
+      ///Garbage Collector-Need to learn
+
       //Interview question
       const fun = (function (a) {
         delete a;
@@ -122,7 +124,8 @@
         boy: true,
         age: 24,
       };
-      //const { name, age } = ameris; //this is called destructing
+    const { name="peer", age } = ameris; //this is called destructing
+    
 
       //want to access two only
       //const {name,,age}=ameris////it will give wrror

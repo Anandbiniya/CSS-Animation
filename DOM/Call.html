@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call Apply Bind</title>
+  </head>
+  <body>
+    <h1>Call apply Bind</h1>
+  </body>
+  <script>
+    //explict Binding == not with dot notation calling
+    //what is call?
+    //The call() method calls the function with a given this value and arguments provided individually.
+    let obj = { name: "anand" };
+
+    function sayHello() {
+      return "hello" + this.name;
+    }
+    //console.log(sayHello());//here the out put will be hello only name will not show any thing because in the window objevt there is no object name is "name"
+
+    //function borrowing
+    //object.functionname.call((where to apply or what needs to take))
+    //then how we are going to call the obj inside the function arguments we use call to get the object values
+
+    // console.log(sayHello.call(obj));
+
+    //WHat is apply?
+    //apply work same as call works but difference is it will take arguments in the form of array
+    let new_obj = { name: "joy" };
+    function SayHi(age, profesional) {
+      return "hello" + this.name + "  is" + age + " and is an" + profesional;
+    }
+    console.log(SayHi.apply(new_obj, [23, "coder"]));
+
+    //what is Bind?
+    //The bind() method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+    let Bind_obj = { name: "orange" };
+    function SayBind(age) {
+      return "Hello" + this.name + "  " + age;
+    }
+    const BindFun = SayBind.bind(Bind_obj);
+    console.log(BindFun(23)); //the out put will be hello orange 23
+    //bind we can reuse the functions
+
+    //output based questions
+
+    const person = { name: "amith" };
+    function SayOut(age) {
+      return `${this.name}  is${age}`;
+    }
+    console.log(SayOut.call(person, 21)); //this will execute immediately and will give answer as amith is 21
+    console.log(SayOut.bind(person, 28)); //this will not execute immediately it will gives a function which we can execute later
+
+    const new_age = 10;
+    let person1 = {
+      name: "abhi",
+      age: 20,
+      getAge: function () {
+        return this.age;
+      },
+    };
+    var person2 = { age: 24 };
+    person1.getAge.call(person2); //this will give 24 why because when we break down person1.getAge()//this will give the inside the Person1 object value now when we applying call we are borrowing another object so it will give 24 apply same for apply and bind also
+
+    let status = "👨‍💻";
+
+    setTimeout(() => {
+      const status = "👩‍💻";
+
+      const data = {
+        status: "🥭",
+        getStatus() {
+          return this.status;
+        },
+      };
+      console.log(data.getStatus()); //🥭output
+      console.log(data.getStatus.call(this)); //👨‍💻  the out put because this will never point to function
+    }, 0);
+
+    //call print animals such that it prints all animals in objevt
+    const animals = [
+      { species: "Lion", name: "king" },
+      { species: "whale", name: "queen" },
+    ];
+    function printAnimals(i) {
+      this.print = function () {
+        console.log("#", i, " " + this.species + " :" + this.name);
+      };
+      this.print();
+    }
+
+    //answer
+    for (let i = 0; i < animals.length; i++) {
+      printAnimals.call(animals[i], i);
+    }
+    //Append an array to another array not using concatination
+
+    const array = ["a", "b"];
+
+    const elements = [0, 1, 2];
+    array.push.apply(array, elements); //the output will be a,b,0,1,2
+
+    console.log(array);
+
+    //using apply to enhance Built-in functions
+    //find min/max number in an array
+    const numbers = [5, 6, 2, 3, 7];
+
+    console.log(Math.max.apply(null, numbers));
+  </script>
+</html>
