@@ -105,3 +105,95 @@ const man2 = new Man("jay");
 
 //Default Binding
 // Default binding refers to how this is the global context whenever a function is invoked without any of these other rules. If we aren't using a dot and we aren't using call(), apply(), or bind(), our this will be our global object. Your global context depends on where you're working.
+
+//Order of precendece of this key word
+//New binding   next explict binding next implict binding next defaukt binding
+
+//Prototype
+function mainFamily(fName, lName) {
+  this.firstName = fName;
+  this.lastName = lName;
+}
+const parent1 = new mainFamily("leon", "grace");
+const parent2 = new mainFamily("dica", "dimo");
+
+parent1.getFullName = function () {
+  return `${this.firstName}  ${this.lastName}`;
+};
+console.log(parent1.getFullName());
+//here we cant acces to the parentr two it will give error here prototype will comes into picture
+mainFamily.prototype.getFullName = function () {
+  return `${this.firstName}  ${this.lastName}`;
+};
+
+//in Java script every function  has a property called prototype that points to an object we can make use of that prototype object that determine all our sharable properties
+
+console.log(parent2.getFullName());
+console.log(parent1.getFullName());
+//when we use prototype we can access the key and give the values too
+
+//uses of prototype
+//pprototype is to share properties and methods accorss instaces
+//other uses is inheritence
+
+//inheritence
+function oldMan(fName, lName) {
+  this.firstName = fName;
+  this.lastName = lName;
+}
+//we have to inerite property and methods from oldman
+//old man has a propert called firstname,last name and method called get superpower
+//and super hero has another property called issuperhero and fightcrime method also he has
+
+oldMan.prototype.getsuperPowers = function () {
+  return `${this.firstName}  ${this.lastName}`;
+};
+function superHero(fName, lName) {
+  //when we pass arguments here we can have acces to firstname and last name but we need to use call method
+  oldMan.call(this, fName, lName);
+  this.isUperHero = true;
+}
+superHero.prototype.fightCrime = function () {
+  console.log(`fightig crime`);
+};
+superHero.prototype = Object.create(oldMan.prototype); //doubyut on this
+//here we can access the get super power
+
+const batman = new superHero("bruce", "wayne");
+superHero.prototype.constructor = superHero;
+console.log(batman.getsuperPowers());
+
+////class key word
+//creating a class
+class jay {
+  constructor(fname, lname) {
+    this.firstname = fname;
+    this.lastname = lname;
+  }
+  //how to add methods
+  sayBYname() {
+    return `${this.firstname}   ${this.lastname}`;
+  }
+}
+//how to create instence of class
+const classjay = new jay("lwon", "ohu");
+console.log(classjay.sayBYname());
+
+//inheritence in class
+//how to inereited in class using extend and super key words
+class spiderhero extends jay {
+  constructor(fname, lname) {
+    super(fname, lname);
+    this.issuper = true;
+  }
+  fightcrimes() {
+    console.log("fighting");
+  }
+}
+const flashman = new spiderhero("wally", "barry");
+console.log(flashman.sayBYname());
+
+//Iterables and Iterators
+//Iterations in java script
+
+
