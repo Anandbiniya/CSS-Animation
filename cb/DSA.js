@@ -18,17 +18,21 @@ for (let i = 1; i < max; i++) {
 }
 console.log(new_arr);
 
-// while (i < arr.length) {
-//   let num = i + 1;
-//   console.log(arr[i], i);
-//   while (arr[i] > num) {
-//     new_arr.push(num);
-
-//     num++;
-//   }
-//   i++;
-//   console.log(new_arr);
-// }
-//
 
 //DSA  &&Time complexity
+let arr1=[0,0,2,3,4,1,3,4,5]
+
+// find repeating numbers
+
+let newarr1=[]
+
+let obj1={}
+
+for(let valu of arr1){
+  if(obj[valu]){
+    
+  }
+}
+
+
+

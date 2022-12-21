@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>DOG APP</h1>
+    <div id="container"></div>
+  </body>
+  <script>
+    //fetch the data
+    //show the data
+    async function fetchData() {
+      let res = await fetch(`https://dog.ceo/api/breeds/list/all`);
+      let data = await res.json();
+      displayData(data.message);
+    }
+    fetchData();
+
+    function displayData(breedData) {
+      document.getElementById("container").innerHTML = `
+    <select onchange="loadData(this.value)">
+        <option>Choose a dog breed</option>;
+        ${Object.keys(breedData)
+          .map((breed) => {
+           
+            return `
+          
+            <option>${breed}</option>`;
+          })
+          .join(" ")}
+        </select>`;
+    }
+    async function loadData(x) {
+      alert(x);
+    }
+  </script>
+</html>
