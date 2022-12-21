@@ -11,14 +11,15 @@
     <div id="container"></div>
   </body>
   <script>
-    //fetch the data
-    //show the data
+    // fetch the data
+    // show the data
     async function fetchData() {
       let res = await fetch(`https://dog.ceo/api/breeds/list/all`);
       let data = await res.json();
       displayData(data.message);
     }
     fetchData();
+ 
 
     function displayData(breedData) {
       document.getElementById("container").innerHTML = `
@@ -26,7 +27,6 @@
         <option>Choose a dog breed</option>;
         ${Object.keys(breedData)
           .map((breed) => {
-           
             return `
           
             <option>${breed}</option>`;

@@ -40,36 +40,63 @@ async function sayHello() {
 }
 sayHello();
 
-
 // Chaing promises VS async await
-
 
 // How it is different better from call back promises
 // Select a user from the database.
 // Get services of the user from an API
-// Calculate the service cost based on the services from the server. 
+// Calculate the service cost based on the services from the server.
 
 //Call abck
 function getUser(userId, callback) {
-  console.log('Get user from the database.');
+  console.log("Get user from the database.");
   setTimeout(() => {
-      callback({
-          userId: userId,
-          username: 'john'
-      });
+    callback({
+      userId: userId,
+      username: "john",
+    });
   }, 1000);
 }
 
 function getServices(user, callback) {
   console.log(`Get services of  ${user.username} from the API.`);
   setTimeout(() => {
-      callback(['Email', 'VPN', 'CDN']);
+    callback(["Email", "VPN", "CDN"]);
   }, 2 * 1000);
 }
 
 function getServiceCost(services, callback) {
   console.log(`Calculate service costs of ${services}.`);
   setTimeout(() => {
-      callback(services.length * 100);
+    callback(services.length * 100);
   }, 3 * 1000);
 }
+
+//sequential vs concurrent vs parallel execution
+
+//sequential execution
+function resolevHello() {
+  return new promise((resolve) => {
+    setTimeout(function () {
+      resolve("hello");
+    }, 2000);
+  });
+}
+
+function resolveWOrld() {
+  return new promise((resolve) => {
+    setTimeout(function () {
+      resolve("world");
+    }, 1000);
+  });
+}
+//summry for an interview
+//The async and await keywords enable asynchrous,promise base behaviour to be written in a cleaner style,avoiding the need to explicity configure promise chain.
+//async await introduced in ES2017
+//async key word returns a promise
+//await keyword-pause execution till the promise is resolved or rejected
+
+
+
+
+

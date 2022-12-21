@@ -20,19 +20,14 @@ console.log(new_arr);
 
 
 //DSA  &&Time complexity
-let arr1=[0,0,2,3,4,1,3,4,5]
+let arr1=[1,2,3]
+let arr2=[4,5,6]
+//1,2,3,4,5,6
+
 
 // find repeating numbers
 
-let newarr1=[]
 
-let obj1={}
-
-for(let valu of arr1){
-  if(obj[valu]){
-    
-  }
-}
 
 
 
