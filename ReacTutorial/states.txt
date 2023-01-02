@@ -1,0 +1,17 @@
+States in react
+In React, a "hook" is a special function that lets you "hook into" React features from function components. Hooks were introduced in React 16.8 as a way to allow function components to have state and access to other React features, like lifecycle methods.
+Here are some example questions about useState that you might be asked in a job interview:
+
+How does useState differ from this.state in a class component?
+How do you initialize the state with useState?
+How do you update the state with useState?
+Can you use multiple calls to useState in a single component? If so, how?
+How does the order of multiple calls to useState affect the component?
+Can you use useState with a functional component that has props? If so, how?
+Can you use useState inside a custom hook? If so, how?
+How do you pass a state value to a child component using useState?
+How do you use the useState hook with a complex state value, such as an object or an array?
+What is the first argument to useState called? What does it represent?
+
+
+
