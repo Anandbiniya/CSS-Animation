@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "name": "Anand Amit",
+      "email": "anand.biniya@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "name": "Anand Amit",
+      "email": "anand.biniya@gmail.com",
+      "password": "23",
+      "id": 3
+    },
+    {
+      "name": "Anand Amit",
+      "email": "anand.biniya@gmail.com",
+      "password": "234",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "name": "Anand Amit",
+      "email": "anand.biniya@gmail.com",
+      "password": "345",
+      "id": 6
+    }
+  ]
+}
