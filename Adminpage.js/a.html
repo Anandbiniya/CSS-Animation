@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Anand Logged in
+    <button id="logout-button">Log out</button>
+</div>
+<script>
+     function handleLogOut() {
+        localStorage.removeItem("user");
+        window.location = "login.html";
+      }
+      const logoutButton = document.getElementById("logout-button");
+      logoutButton.addEventListener("click", handleLogOut);
+</script>
+  </body>
+</html>

@@ -15,7 +15,7 @@
         <input type="text" id="pass" /><br />
         <button type="submit">Log In</button>
       </form>
-    </div>
+    
     <script>
       function login(e) {
         e.preventDefault();
@@ -27,6 +27,7 @@
           (user) => user.Email == Email && user.Password == Pass
         );
         if (loguser) {
+            window.location="a.html"
           console.log("log");
         } else {
           console.log("no");
@@ -35,6 +36,8 @@
       let frm = document
         .getElementById("login")
         .addEventListener("submit", login);
+
+     
     </script>
   </body>
 </html>
