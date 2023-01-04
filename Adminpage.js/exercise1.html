@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <form action="" id="sin-up">
+        <label for="">Name:</label><br />
+        <input type="text" name="name" id="name" /><br />
+        <label for="">Email:</label><br />
+        <input type="email" name="email" id="email" /><br />
+        <label for="">Password:</label><br />
+        <input type="password" name="pass" id="pass" /><br />
+        <button type="submit">Add</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+    <script>
+      function signUpform() {
+        event.preventDefault();
+        let Name = document.getElementById("name").value;
+        let Email = document.getElementById("email").value;
+        let Password = document.getElementById("pass").value;
+
+        let user = { Name, Email, Password };
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+        console.log(users);
+        users.push(user);
+        localStorage.setItem("users", JSON.stringify(users));
+      }
+      let formDetails = document
+        .getElementById("sin-up")
+        .addEventListener("submit", signUpform);
+    </script>
+  </body>
+</html>

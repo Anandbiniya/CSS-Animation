@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <form action="" id="login">
+        <label for="">Email:</label><br />
+        <input type="email" name="" id="email" /><br />
+        <label for="">Password:</label><br />
+        <input type="text" id="pass" /><br />
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+    <script>
+      function login(e) {
+        e.preventDefault();
+        let Email = document.getElementById("email").value;
+        let Pass = document.getElementById("pass").value;
+
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+        let loguser = users.find(
+          (user) => user.Email == Email && user.Password == Pass
+        );
+        if (loguser) {
+          console.log("log");
+        } else {
+          console.log("no");
+        }
+      }
+      let frm = document
+        .getElementById("login")
+        .addEventListener("submit", login);
+    </script>
+  </body>
+</html>
