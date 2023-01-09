@@ -1,0 +1,90 @@
+Components
+Components describe the part of user Interface
+They are reusable
+they can be nested
+Two types of Components 
+1.class Components
+2.functional Components
+
+functional components
+ans:they are java script functions where they can receive properties and return JSX
+
+
+Class components
+ans.class components are basically es6 classes
+similarly functional components class components also optionally receives props and return JSX
+can also maintain private internal state similar words in maintain some private information which is private to that componet and use that info to describe user interface
+
+
+what is extends doing in class component in react?
+Using the extends keyword, you can allow the current component to access all the component's properties, including the function, and trigger it from the child component. 
+
+
+Render in class component
+The render() method is of course called when a component gets updated, it has to re-render the HTML to the DOM, with the new changes.
+
+
+JSX
+Extensions of Java script language syntax
+write XML-like code for elements and components.
+JSX tags have a tag name,attribute and children
+JSX ultimately transpile to pure Java script which is understood by the browsers.
+
+with out JSX
+import React, { Component } from "react";
+
+class Hello extends Component {
+  render() {
+    // return (
+    //   <div>
+    //     <h1>Hello vishwas</h1>
+    //   </div>
+    // );
+    return React.createElement(
+      "div",
+      null,
+      React.createElement("h1", null, "hello vishwas")
+   //second parameter describe about attribute
+   
+      );
+  }
+}
+export default Hello;
+
+
+JSX differences
+class=>className;
+for=>htmlFor
+camelcase
+
+How we can access props in class components
+ans.we can access props in class component using through this key word example this.props.value
+and props has default name we canot change thatbut in functional component we can
+props are readbla only they are immutable
+
+
+Can we pass a hook as a prop React?
+ans:useState is a hook, useCallback is a hook, or even for a matter any function, which encapsulates other hooks, these should not be passed as prop
+
+
+
+
+Props vs state
+Props get passed to the component
+function parameter
+states are managed with in the component
+variable declared in the function body
+state can we changed
+props are immutable
+
+
+
+How State can be used in class component
+
+what is State in react?
+ans.A state is nothing butan object privately maintained inside the component by react
+
+
+
+when we modify state directly in class component react will not re render
+we always we have to use setState
