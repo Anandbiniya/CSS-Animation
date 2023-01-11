@@ -88,3 +88,22 @@ ans.A state is nothing butan object privately maintained inside the component by
 
 when we modify state directly in class component react will not re render
 we always we have to use setState
+
+
+
+Super() in React component
+Super() function is to call the constructor of the parent class. 
+It is used when we need to access a few variables in the parent class.
+ It returns an object which represents the parent class.
+
+
+
+ when we have to update the state based on the previous state we should pass function as an arguments
+  allways make use of setState
+  if certain code should be executed after setState has been updated place the code in call back function is the second arguments to the setState method
+  when you have to update state based on the prev state value pass in a function as an arguments instead of regular object
+
+
+
+      //there are two wasy to destructre the props in functional component
+    //first way to destruce in function parameter

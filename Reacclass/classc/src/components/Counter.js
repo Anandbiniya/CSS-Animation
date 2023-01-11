@@ -1,17 +1,21 @@
 import React, { Component } from "react";
 export default class Counter extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       count: 0,
     };
   }
+
   Add() {
+    // this.setState({
+    //   count: this.state.count + 1,
+    // });
     this.setState((prev) => ({
       count: prev.count + 1,
     }));
   }
-  del() {
+  incFive() {
     this.Add();
     this.Add();
     this.Add();
@@ -21,9 +25,8 @@ export default class Counter extends Component {
   render() {
     return (
       <div>
-        <h1>Counter{this.state.count}</h1>
-        <button onClick={() => this.Add()}>Add</button>
-        <button onClick={() => this.del()}>Delete</button>
+        <h1>Count: {this.state.count}</h1>
+        <button onClick={() => this.incFive()}>Add</button>
       </div>
     );
   }
