@@ -5,8 +5,9 @@ export default class ClassPerson extends Component {
     const { e } = this.props;
     return (
       <div>
-        <div key={e.id}>
-          I am {e.name} I am {e.age} old .I know
+        <div>
+          {/* Key property cannot access in child component */}I am {e.name} I
+          am {e.age} old .I know
           {e.skill}
         </div>
       </div>

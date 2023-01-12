@@ -14,11 +14,17 @@ import UserGreting from "./components/UserGreting";
 import FunUsergreeting from "./components/FunUsergreeting";
 import ClassList from "./components/ClassList";
 import FunctionList from "./components/FunctionList";
+import StyleSheet from "./components/StyleSheet";
+import { Form } from "react-router-dom";
+import FormComponent from "./components/Form";
+import FunForm from "./components/FunForm";
+import ClassForm from "./components/ClassForm";
+import FragmentDemo from "./components/FragmentDemo";
 
 function App() {
   return (
     <div className="App">
-      <Greet name="vshwas" hero="super" />
+      {/* <Greet name="vshwas" hero="super" /> */}
       {/* <Welcome qual="good" />
       <Welcome qual="fine" />
       <Welcome qual="gret" /> */}
@@ -32,8 +38,13 @@ function App() {
       <ParentComponent /> */}
       {/* <UserGreting />
       <FunUsergreeting /> */}
-      <ClassList />
-      <FunctionList />
+      {/* <ClassList /> */}
+      {/* <FunctionList /> */}
+      {/* <StyleSheet primary={true} /> */}
+       {/* <FunForm />
+      <FormComponent />  */}
+      {/* <ClassForm /> */}
+      <FragmentDemo/>
     </div>
   );
 }

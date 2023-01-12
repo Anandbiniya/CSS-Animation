@@ -1,0 +1,24 @@
+Life Cycle methods
+Mounting
+When an instance of a component is being  created and inserted in DOM
+updating
+When a component is being re-rendered as a result of changes to either its props or state
+unmouting
+When a component being removed from the DOM
+Error handling
+When there is error during rendering in a life cycle method  or in the consructor of any Child component
+
+
+Mounting phase we have four methods
+constructor,staticDerivedState from props,render and componentDid mount
+
+During updating we have five methods
+static getDerived state from props,should ComponentUpdate,render,getSnapShot beforeUpdate and component update
+
+
+during unmounting we have 1 phase
+component will unmounting
+
+for error handling phase we have two methods
+ static getDerived state from erro and component did Catch
+

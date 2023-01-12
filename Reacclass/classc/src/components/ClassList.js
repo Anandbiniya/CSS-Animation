@@ -9,7 +9,9 @@ export default class ClassList extends Component {
       { id: 3, name: "pat", age: 21, skill: "ANg" },
     ];
 
-    const namesList = person.map((e) => <ClassPerson e={e}></ClassPerson>);
+    const namesList = person.map((e) => (
+      <ClassPerson key={e.id} e={e}></ClassPerson>
+    ));
 
     return <div>{namesList}</div>;
   }
