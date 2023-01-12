@@ -20,6 +20,8 @@ import FormComponent from "./components/Form";
 import FunForm from "./components/FunForm";
 import ClassForm from "./components/ClassForm";
 import FragmentDemo from "./components/FragmentDemo";
+import Purecomponent from "./components/PureComponent";
+import PareComp from "./components/PareComp";
 
 function App() {
   return (
@@ -41,10 +43,12 @@ function App() {
       {/* <ClassList /> */}
       {/* <FunctionList /> */}
       {/* <StyleSheet primary={true} /> */}
-       {/* <FunForm />
+      {/* <FunForm />
       <FormComponent />  */}
       {/* <ClassForm /> */}
-      <FragmentDemo/>
+      {/* <FragmentDemo/> */}
+      {/* <Purecomponent /> */}
+      <PareComp/>
     </div>
   );
 }
