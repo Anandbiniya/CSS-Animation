@@ -85,3 +85,12 @@ Use default props to specify fallback values for props that are not required. Th
 Use prop types to specify the type of a prop. This can help catch mistakes during development and provide documentation for the component.
 
 Avoid using props for state. Props are meant to be passed from a parent component, and the child component should not modify them. If you need to modify data within a component, consider using the state instead.
+
+
+
+How to get value from child component to parent component in React?
+
+To pass data from child to parent component in React:
+Pass a function as a prop to the Child component.
+Call the function in the Child component and pass the data as arguments.
+Access the data in the function in the Parent .
