@@ -1,0 +1,7 @@
+what is HOC
+A higher-order component (HOC) is an advanced technique in React for reusing component logic.
+
+
+What is renderProps?
+The term “render prop” refers to a technique for sharing code between React components using a prop whose value is a function.
+The term render props refers to a techniques for sharing code between react components using props whose value is a function
