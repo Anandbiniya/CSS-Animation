@@ -1,0 +1,21 @@
+what is useState?
+ans:useState is a hook that lets add react state to functional components
+
+
+Rules of Hooks
+Only calls Hooks at the top level
+Only call hooks from react function
+
+
+UseState with previous state
+
+A state variable can be a number,string boolean object array
+use state does not automatically merge and update the objects
+
+
+In classes state is always object
+with in the useState hook the state does not have to be an object
+use State hook returns an array with two elements
+The first element is the current value of the state and the second element is a state setter function
+If New state value depends on previous state value you can pass function to the setter function
+when you are dealing with objects or array always make sure to spread your state variable and then call setter function
