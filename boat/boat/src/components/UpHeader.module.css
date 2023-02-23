@@ -1,0 +1,15 @@
+.container {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .text {
+    margin: 0;
+  }
+  
