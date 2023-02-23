@@ -1,58 +1,55 @@
 import React, { Component } from "react";
 import styles from "./MainHeader.module.css";
 
-const HoverableDiv = React.memo(({ handleMouseOver, handleMouseOut }) => {
-  return (
-    <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-      <h3>CATEGORIES</h3>
-    </div>
-  );
-});
-const HoverableDivTwo = React.memo(({ handleMouseOver, handleMouseOut }) => {
-  return (
-    <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-      <h3>CATEGORIES</h3>
-    </div>
-  );
-});
-const HoverText = () => {
-  return (
-    <div>
-      Hovering ri ght meow!
-      <span role="img" aria-label="cat">
-        🐱
-      </span>
-    </div>
-  );
-};
-const HoverTextTwo = () => {
-  return (
-    <div>
-      Hovering ri ght meow!
-      <span role="img" aria-label="cat">
-        🐱
-      </span>
-    </div>
-  );
-};
+const HoverableDiv = React.memo(
+  ({ isHovering, handleMouseOver, handleMouseOut }) => {
+    return (
+      <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+        <h3>CATEGORIES</h3>
+       
+        {isHovering && (
+          <div>
+            Hovering ri ght meow!
+            <span role="img" aria-label="cat">
+              🐱
+            </span>
+          </div>
+        )}
+      </div>
+    );
+  }
+);
 
 class MainHeader extends Component {
   constructor(props) {
     super(props);
-    this.handleMouseOver = this.handleMouseOver.bind(this);
-    this.handleMouseOut = this.handleMouseOut.bind(this);
+    this.handleMouseOverOne = this.handleMouseOverOne.bind(this);
+    this.handleMouseOutOne = this.handleMouseOutOne.bind(this);
+    this.handleMouseOverTwo = this.handleMouseOverTwo.bind(this);
+    this.handleMouseOutTwo = this.handleMouseOutTwo.bind(this);
     this.state = {
-      isHovering: false,
+      isHoveringOne: false,
+      isHoveringTwo: false,
     };
   }
-  handleMouseOver() {
+  handleMouseOverOne() {
     this.setState(() => ({
-      isHovering: true,
+      isHoveringOne: true,
     }));
   }
-  handleMouseOut() {
+  handleMouseOutOne() {
     this.setState(() => ({
-      isHovering: false,
+      isHoveringOne: false,
+    }));
+  }
+  handleMouseOverTwo() {
+    this.setState(() => ({
+      isHoveringTwo: true,
+    }));
+  }
+  handleMouseOutTwo() {
+    this.setState(() => ({
+      isHoveringTwo: false,
     }));
   }
   render() {
@@ -63,20 +60,19 @@ class MainHeader extends Component {
         </div>
         <div className={styles.category}>
           <div>
-            {/* <HoverText /> gets shown when mouse is over <HoverableDiv /> */}
+          <h3>Daily Deals</h3>
             <HoverableDiv
-              handleMouseOver={this.handleMouseOver}
-              handleMouseOut={this.handleMouseOut}
+              isHovering={this.state.isHoveringOne}
+              handleMouseOver={this.handleMouseOverOne}
+              handleMouseOut={this.handleMouseOutOne}
             />
-            {this.state.isHovering && <HoverText />}
           </div>
           <div>
-            {/* <HoverText /> gets shown when mouse is over <HoverableDiv /> */}
-            <HoverableDivTwo
-              handleMouseOver={this.handleMouseOver}
-              handleMouseOut={this.handleMouseOut}
+            <HoverableDiv
+              isHovering={this.state.isHoveringTwo}
+              handleMouseOver={this.handleMouseOverTwo}
+              handleMouseOut={this.handleMouseOutTwo}
             />
-            {this.state.isHovering && <HoverTextTwo />}
           </div>
         </div>
         <div className={styles.searchCart}>Search bar and cart</div>
