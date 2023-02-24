@@ -26,6 +26,12 @@ class Home extends Component {
             DashBoard
           </Link>
         </p>
+        <p>
+          {" "}
+          <Link to="/dropdown/" className={styles.link}>
+            DropDown
+          </Link>
+        </p>
       </Container>
     );
   }

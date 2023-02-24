@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import SignUp from "./components/SignUp";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
+import DropDown from "./components/DropDown";
 function App() {
   return (
     <div className="App">
@@ -14,11 +15,12 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-        <Route path="*">Ups</Route>
+          <Route path="*">Ups</Route>
           <Route exact path="/" element={<Home />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="dropdown" element={<DropDown />} />
         </Routes>
       </BrowserRouter>
     </div>

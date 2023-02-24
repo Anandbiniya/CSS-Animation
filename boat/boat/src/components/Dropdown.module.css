@@ -1,0 +1,12 @@
+.dropdownContainer {
+    display: flex;
+  }
+  
+  .dropdownButton {
+    margin-right: 10px;
+  }
+  
+  .dropdownButton:hover ~ .dropdownButton {
+    display: none;
+  }
+  
