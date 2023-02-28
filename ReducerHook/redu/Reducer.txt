@@ -1,0 +1,25 @@
+UseReducer
+use reducer is a hook that is used for state management
+It is an alternative to useState
+Whta is the difference?
+UseState is built using UseReducer
+When to use useState Vs useReducer
+
+
+
+UseReducer has two parameters reducer function and intial state
+newState=reducer function again accept two pararmeter currentState and action  reducer(currentState,function)
+
+use reducer reducer return pair of values new state and dispatch
+
+useReducer is a hook that is used for state management in React.
+useReducer is related to reducer functions
+useReducer(reducer,initialState)
+reducer(currentState,action)
+useReducer is bascically changing a state in react components
+
+ easy to use and understand:intuitive
+
+
+
+
